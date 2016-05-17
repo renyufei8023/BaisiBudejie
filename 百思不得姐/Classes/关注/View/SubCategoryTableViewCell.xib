@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="subcategory" rowHeight="70" id="1wv-4o-2hQ" customClass="SubCategoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1wv-4o-2hQ" id="1ii-tC-tes">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUh-n8-QWO">
+                        <rect key="frame" x="18" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="MJ7-OQ-rvC"/>
+                            <constraint firstAttribute="height" constant="40" id="rqf-mv-paT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGC-Of-vfx">
+                        <rect key="frame" x="66" y="15" width="109" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="109" id="9cE-oF-oMe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cON-cI-Wxb">
+                        <rect key="frame" x="66" y="40" width="109" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZb-gb-lew">
+                        <rect key="frame" x="261" y="23" width="46" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="z4a-FC-1G0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="+ 关注" backgroundImage="FollowBtnBg">
+                            <color key="titleColor" red="1" green="0.20791691430000001" blue="0.2401241097" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="FollowBtnClickBg"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYr-OB-0lQ">
+                        <rect key="frame" x="0.0" y="63" width="320" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Q5h-tm-Jpe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eUh-n8-QWO" firstAttribute="centerY" secondItem="1ii-tC-tes" secondAttribute="centerY" id="3SO-bI-oEG"/>
+                    <constraint firstItem="cON-cI-Wxb" firstAttribute="leading" secondItem="JGC-Of-vfx" secondAttribute="leading" id="5hB-bg-RK9"/>
+                    <constraint firstItem="JGC-Of-vfx" firstAttribute="top" secondItem="1ii-tC-tes" secondAttribute="topMargin" constant="7" id="IzM-0y-wnN"/>
+                    <constraint firstItem="cON-cI-Wxb" firstAttribute="top" secondItem="JGC-Of-vfx" secondAttribute="bottom" constant="4" id="Pvb-Fa-ezO"/>
+                    <constraint firstItem="xZb-gb-lew" firstAttribute="leading" secondItem="rYr-OB-0lQ" secondAttribute="trailing" id="SnW-8n-wUH"/>
+                    <constraint firstItem="rYr-OB-0lQ" firstAttribute="leading" secondItem="1ii-tC-tes" secondAttribute="leading" id="VV1-B1-jne"/>
+                    <constraint firstItem="cON-cI-Wxb" firstAttribute="width" secondItem="JGC-Of-vfx" secondAttribute="width" id="WaF-gs-Shd"/>
+                    <constraint firstItem="eUh-n8-QWO" firstAttribute="leading" secondItem="1ii-tC-tes" secondAttribute="leadingMargin" constant="10" id="gaE-V1-ptY"/>
+                    <constraint firstItem="cON-cI-Wxb" firstAttribute="leading" secondItem="eUh-n8-QWO" secondAttribute="trailing" constant="8" id="hkD-KB-41P"/>
+                    <constraint firstItem="JGC-Of-vfx" firstAttribute="leading" secondItem="eUh-n8-QWO" secondAttribute="trailing" constant="8" id="ong-gX-iXK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xZb-gb-lew" secondAttribute="trailing" constant="5" id="uCp-vs-089"/>
+                    <constraint firstAttribute="trailing" secondItem="rYr-OB-0lQ" secondAttribute="trailing" id="xUr-m6-7ir"/>
+                    <constraint firstItem="xZb-gb-lew" firstAttribute="centerY" secondItem="1ii-tC-tes" secondAttribute="centerY" id="zNa-Ei-56W"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="5hB-bg-RK9"/>
+                        <exclude reference="SnW-8n-wUH"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLab" destination="cON-cI-Wxb" id="Zir-je-yke"/>
+                <outlet property="fourceBtn" destination="xZb-gb-lew" id="ih4-BW-jsR"/>
+                <outlet property="iconIMG" destination="eUh-n8-QWO" id="cma-za-GlZ"/>
+                <outlet property="nameLab" destination="JGC-Of-vfx" id="k4S-AC-bG3"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="355.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+        <image name="FollowBtnClickBg" width="51" height="25"/>
+    </resources>
+</document>
